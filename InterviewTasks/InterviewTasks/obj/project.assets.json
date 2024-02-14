@@ -54,9 +54,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Onyx\\InterviewTasks\\InterviewTasks\\InterviewTasks.csproj",
-      "projectName": "InterviewTasks",
-      "projectPath": "C:\\Onyx\\InterviewTasks\\InterviewTasks\\InterviewTasks.csproj",
+      "projectUniqueName": "C:\\Onyx\\InterviewTasks\\InterviewTasks\\InterviewTask1.csproj",
+      "projectName": "InterviewTask1",
+      "projectPath": "C:\\Onyx\\InterviewTasks\\InterviewTasks\\InterviewTask1.csproj",
       "packagesPath": "C:\\Users\\kiran\\.nuget\\packages\\",
       "outputPath": "C:\\Onyx\\InterviewTasks\\InterviewTasks\\obj\\",
       "projectStyle": "PackageReference",

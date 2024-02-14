@@ -1,18 +1,20 @@
+using System.Text;
+
 public class Logger
 {
-    private readonly StreamWriter _writer;
-    public Logger(string path)
-    {
-        _writer = new StreamWriter(File.Open(path, FileMode.Append))
-        {
-            AutoFlush = true
-        };
+    private readonly Stream _writer;
+    private readonly TimeProvider _timeProvider;
 
+    public Logger(Stream writer, TimeProvider timeProvider)
+    {
+        _writer = writer;
+        _timeProvider = timeProvider;
         Log("Logger initialized");
     }
 
     public void Log(string str)
     {
-        _writer.WriteLine(string.Format("[{0:dd.MM.yy HH:mm:ss}] {1}", DateTime.Now, str));
+        var actual = Encoding.UTF8.GetBytes(string.Format("[{0:dd.MM.yy HH:mm:ss}] {1}\n", _timeProvider.GetLocalNow(), str));
+        _writer.Write(actual);
     }
 }
