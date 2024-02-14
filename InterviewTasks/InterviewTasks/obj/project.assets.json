@@ -1,11 +1,52 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "RandomTestValues/2.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/RandomTestValues.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RandomTestValues.dll": {}
+        }
+      },
+      "Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "RandomTestValues/2.1.1": {
+      "sha512": "ogAvuaumTeSjCArNakRfnAiqcERgp3Q0QqxBiM6UdOZmI2Tm86S4tdyobS4H7y7L1JhofBgkei//kxnfejv3aA==",
+      "type": "package",
+      "path": "randomtestvalues/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/RandomTestValues.dll",
+        "randomtestvalues.2.1.1.nupkg.sha512",
+        "randomtestvalues.nuspec"
+      ]
+    },
+    "Common/1.0.0": {
+      "type": "project",
+      "path": "../Common/Common.csproj",
+      "msbuildProject": "../Common/Common.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "Common >= 1.0.0",
+      "RandomTestValues >= 2.1.1"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\kiran\\.nuget\\packages\\": {}
@@ -33,7 +74,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Onyx\\InterviewTasks\\Common\\Common.csproj": {
+              "projectPath": "C:\\Onyx\\InterviewTasks\\Common\\Common.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -45,6 +90,12 @@
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
+        "dependencies": {
+          "RandomTestValues": {
+            "target": "Package",
+            "version": "[2.1.1, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

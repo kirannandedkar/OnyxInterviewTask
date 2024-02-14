@@ -1,0 +1,12 @@
+C:\Onyx\InterviewTasks\Common\bin\Debug\net8.0\Common.deps.json
+C:\Onyx\InterviewTasks\Common\bin\Debug\net8.0\Common.dll
+C:\Onyx\InterviewTasks\Common\bin\Debug\net8.0\Common.pdb
+C:\Onyx\InterviewTasks\Common\obj\Debug\net8.0\Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Onyx\InterviewTasks\Common\obj\Debug\net8.0\Common.AssemblyInfoInputs.cache
+C:\Onyx\InterviewTasks\Common\obj\Debug\net8.0\Common.AssemblyInfo.cs
+C:\Onyx\InterviewTasks\Common\obj\Debug\net8.0\Common.csproj.CoreCompileInputs.cache
+C:\Onyx\InterviewTasks\Common\obj\Debug\net8.0\Common.sourcelink.json
+C:\Onyx\InterviewTasks\Common\obj\Debug\net8.0\Common.dll
+C:\Onyx\InterviewTasks\Common\obj\Debug\net8.0\refint\Common.dll
+C:\Onyx\InterviewTasks\Common\obj\Debug\net8.0\Common.pdb
+C:\Onyx\InterviewTasks\Common\obj\Debug\net8.0\ref\Common.dll

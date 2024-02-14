@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "XDeJGawqhxeowxPkF9464kVGFSqyzLn4e0Rq3ag0LsEXYZ2Px/5ywlngm7f86YECDgdP4l9SCpsXDdKK2mZw9A==",
+  "dgSpecHash": "+7bOXb1H45IiswjeUMu8xDiFA+pzPsTnUWrG6vN4peNWOEdcnyU3p/KMzAPrtFVseCZPPgRsBFW7DjlXOFoLTg==",
   "success": true,
   "projectFilePath": "C:\\Onyx\\InterviewTasks\\InterviewTasks\\InterviewTasks.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\kiran\\.nuget\\packages\\randomtestvalues\\2.1.1\\randomtestvalues.2.1.1.nupkg.sha512"
+  ],
   "logs": []
 }
