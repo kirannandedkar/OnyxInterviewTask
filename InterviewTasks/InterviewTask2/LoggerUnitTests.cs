@@ -4,11 +4,11 @@ using Xunit.Abstractions;
 
 namespace InterviewTask2
 {
-    public class UnitTest1
+    public class LoggerUnitTests
     {
         private readonly ITestOutputHelper output;
 
-        public UnitTest1(ITestOutputHelper output)
+        public LoggerUnitTests(ITestOutputHelper output)
         {
             this.output = output;
         }
