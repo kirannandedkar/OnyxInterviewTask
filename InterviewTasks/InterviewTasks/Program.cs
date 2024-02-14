@@ -1,5 +1,6 @@
 ﻿using RandomTestValues;
 using System;
+using System.ComponentModel;
 
 namespace InterviewTasks
 {
@@ -34,8 +35,16 @@ namespace InterviewTasks
                                                                         .SelectMany(i => i.Observations)
                                                                         .GroupBy(i => i.TravelAgent)
                                                                         .Select(i => new TravelAgentInfo { TravelAgent = i.Key, TotalNumberOfNights = i.Sum(c => c.NumberOfNights) })
-                                                                        .ToList();
+            .ToList();
 
+
+            //c) Write a SQL query that finds all travel agents that does not have any observations.
+
+            //SELECT* FROM TravelAgent t LEFT join Observation o on t.TravelAgent = o.TravelAgent where o.TravelAgent is NULL
+
+            // d) Write a SQL query that finds all travel agents that have more than two observations.
+
+            //SELECT t.TravelAgentName FROM TravelAgent t LEFT join Observation o on t.TravelAgent = o.TravelAgent where O.TravelAgent is not NULL GROUP BY t.TravelAgentName HAVING count(*) > 2;
         }
     }
 }
